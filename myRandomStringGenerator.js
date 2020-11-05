@@ -1,9 +1,6 @@
-var randAlphaNumericStringGen = (function(){
-
-
+var randAlphaNumericStringGen = function(stringLength){
   var alphas='abcdefghjklmnopqrstuvwxyz';
   var res='';
-  return function(stringLength){
     if(typeof stringLength !=='number') return 'String Length Must Be a Number';
     for(var x=0; x<stringLength; x++){
       if(res.length===stringLength) break;
@@ -16,11 +13,4 @@ var randAlphaNumericStringGen = (function(){
     }
     return res;
   }
-
-
-
-
-})();
-
-
 console.log(randAlphaNumericStringGen(16));
