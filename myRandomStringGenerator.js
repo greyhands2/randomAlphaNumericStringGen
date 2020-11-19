@@ -6,9 +6,9 @@ var randAlphaNumericStringGen = function(stringLength){
       if(res.length===stringLength) break;
       res+=`${Math.floor((Math.random()*9+1))}`;
       if(res.length===stringLength) break;
-      res+=`${alphas.charAt(Math.floor((Math.random()*35+1)))}`;
+      res+=`${alphas.charAt(Math.floor((Math.random()*25+1)))}`;
       if(res.length===stringLength) break;
-      res+=`${alphas.charAt(Math.floor((Math.random()*35+1))).toUpperCase()}`;
+      res+=`${alphas.charAt(Math.floor((Math.random()*25+1))).toUpperCase()}`;
       if(res.length===stringLength) break;
     }
     return res;
